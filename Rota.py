@@ -1,3 +1,4 @@
+#enjoy
 def rota(cep1, cep2):
     url1 = 'https://viacep.com.br/ws/' + cep1 + '/json/'
     url2 = 'https://viacep.com.br/ws/' + cep2 + '/json/'
