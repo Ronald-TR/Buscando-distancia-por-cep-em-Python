@@ -9,7 +9,7 @@ def rota(cep1, cep2):
     strDestino = strDestino.replace(' ', '+')
     return requests.get('https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='
                      +strOrigem+'&destinations='+strDestino)    #adicione o campo &key= ao final, com a sua chave de api distancematrix,
-                                                                #obtida gratuitamente no seu site oficial
+                                                                #obtida gratuitamente no seu site oficial caso use fora do ambiente de testes
                                                                 
                                                                 
 #Exemplo de chamada
