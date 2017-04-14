@@ -1,5 +1,8 @@
-#enjoy
-def rota(cep1, cep2):
+import requests
+import json
+
+
+def rota(cep1, cep2):                                           #enjoy
     url1 = 'https://viacep.com.br/ws/' + cep1 + '/json/'
     url2 = 'https://viacep.com.br/ws/' + cep2 + '/json/'
     origem = json.loads(requests.get(url1).text)
